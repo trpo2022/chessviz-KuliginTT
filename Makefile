@@ -1,2 +1,2 @@
-Hi_world: Hi_world.c
-	gcc -Wall -Werror -o Hi_world Hi_world.c
+Chess: chessvis.c
+	gcc -Wall -Werror -o Chess chessvis.c
