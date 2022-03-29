@@ -1,2 +1,2 @@
-Chess: chessvis.c
-	gcc -Wall -Werror -o Chess chessvis.c
+Chess: chess.c
+	gcc -Wall -Werror -o Chess chess.c
