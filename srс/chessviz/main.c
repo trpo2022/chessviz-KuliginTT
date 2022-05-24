@@ -31,7 +31,7 @@ int main(){
     printf("e2-e4 e7-e5\n");
     while (1)
     {
-        scanf("%c%d%c%c%d %c%d%c%c%d", &c_x_start, &y_start, &d, &c_x_end, &y_end, &c_x_s, &y_s, &d, &c_x_e, &y_e, &y_s);
+        scanf("%c%d%c%c%d %c%d%c%c%d", &c_x_start, &y_start, &d, &c_x_end, &y_end, &c_x_s, &y_s, &d, &c_x_e, &y_e);
         x_start = per(c_x_start);
         x_end = per(c_x_end);
         x_s = per(c_x_s);
@@ -48,4 +48,5 @@ int main(){
         print_board(board);
         printf("Введите ход.\n");
     }
+    return 0;
 }
