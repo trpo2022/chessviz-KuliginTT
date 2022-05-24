@@ -1,9 +1,5 @@
 #include "../libchessviz/board.h"
 #include "chess_move.h"
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-// #include <ctest.h>
 
 #define CTEST_MAIN
 
@@ -48,5 +44,5 @@ int main(){
         print_board(board);
         printf("Введите ход.\n");
     }
-    return 0;
+    return 1;
 }
