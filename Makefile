@@ -7,16 +7,16 @@ CPPFLAGS=-MMD
 ./bin/chess: ./obj/src/chessviz/main.o ./obj/src/libchessviz/libchessviz.a
 	$(CC) $(CFLAGS) -o $@ $^
 
-./obj/src/chessviz/main.o: ./srс/chessviz/main.c
+./obj/src/chessviz/main.o: ./src/chessviz/main.c
 	$(CC) -c $(CFLAGS) $(CPPFLAGS) -o $@ $<
 
 ./obj/src/libchessviz/libchessviz.a: ./obj/src/libchessviz/board.o ./obj/src/chessviz/chess_move.o
 	ar rcs $@ $^
 
-./obj/src/libchessviz/board.o: ./srс/libchessviz/board.c
+./obj/src/libchessviz/board.o: ./src/libchessviz/board.c
 	$(CC) -c $(CFLAGS) $(CPPFLAGS) -o $@ $<
 
-./obj/src/chessviz/chess_move.o: ./srс/chessviz/chess_move.c
+./obj/src/chessviz/chess_move.o: ./src/chessviz/chess_move.c
 	$(CC) -c $(CFLAGS) $(CPPFLAGS) -o $@ $<
 
 clean:

@@ -1,3 +1,10 @@
-Chess
+chess
 .clang-format
 chessviz.c
+chess_move.d
+chess_move.o
+main.d
+main.o
+board.d
+board.o
+libchessviz
